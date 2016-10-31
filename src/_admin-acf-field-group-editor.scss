@@ -1,0 +1,40 @@
+// Field group descriptions in the field group list.
+#acf-field-group-wrap .acf-description {
+  // Give them their own line.
+  display: block;
+  margin-left: 0;
+
+  // Smaller text.
+  font-size: 12px;
+
+  // Don't italicize.
+  font-style: normal;
+
+  // More room.
+  margin-top: 3px;
+  line-height: 1.7;
+}
+
+// Make the class field full-width so we can fit a lot in it if necessary.
+.acf-field[data-name="wrapper"] .acf-input ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  // 'Class' is the second field of the 'Wrapper Attributes' row, in between
+  // 'Width' and 'ID.' Move it to the end and make it 100% width so
+  // that the others stay on top and take up half the width each.
+  li:nth-child(2) {
+    order: 3;
+    flex: 1 0 100%;
+
+    // Give it top margin that evenly spaces it from its peer fields.
+    margin-top: 8px;
+  }
+
+  // Use flex instead of float here so we can reorder the fields.
+  li {
+    flex: 1 0 50%;
+    float: none;
+    width: auto;
+  }
+}
