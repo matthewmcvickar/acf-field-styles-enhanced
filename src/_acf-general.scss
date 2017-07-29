@@ -160,6 +160,13 @@
     }
   }
 
+  // Taller heights for post lists in relationship fields.
+  &.mm-relationship-list-large {
+    .acf-relationship .list {
+      height: 400px;
+    }
+  }
+
   // Negative top margin on WYSIWYG fields so that the field label fits in the
   // empty space to the left of the 'Visual' and 'Text' tabs.
   &.mm-wysiwyg-collapse-label {
