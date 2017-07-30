@@ -161,9 +161,15 @@
   }
 
   // Taller heights for post lists in relationship fields.
+  &.mm-relationship-list-medium {
+    .acf-relationship .list {
+      height: 300px;
+    }
+  }
+
   &.mm-relationship-list-large {
     .acf-relationship .list {
-      height: 400px;
+      height: 450px;
     }
   }
 
