@@ -136,7 +136,8 @@
   }
 
   // Shorter heights for WYSIWYG fields.
-  &.mm-wysiwyg-tiny {
+  &.mm-wysiwyg-tiny,
+  &.mm-textarea-tiny {
     iframe,
     textarea {
       height: 90px !important;
@@ -144,7 +145,8 @@
     }
   }
 
-  &.mm-wysiwyg-small {
+  &.mm-wysiwyg-small,
+  &.mm-textarea-small, {
     iframe,
     textarea {
       height: 150px !important;
@@ -152,7 +154,8 @@
     }
   }
 
-  &.mm-wysiwyg-medium {
+  &.mm-wysiwyg-medium,
+  &.mm-textarea-medium, {
     iframe,
     textarea {
       height: 300px !important;
