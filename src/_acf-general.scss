@@ -3,6 +3,19 @@
   display: block;
 }
 
+// Bigger borders between repeater rows (except for the first row).
+.acf-repeater.-row > table > tbody > tr:nth-child(n+2) > td,
+.acf-repeater.-block > table > tbody > tr:nth-child(n+2) > td {
+  border-top: 12px solid #ddd;
+}
+
+// Top-align cell numbers in repeater rows.
+.acf-repeater .acf-row-handle {
+  font-weight: bold;
+  padding-top: 15px !important;
+  vertical-align: top !important;
+}
+
 // Custom row classes.
 .acf-field {
 
@@ -135,9 +148,15 @@
     }
   }
 
+  // Small instructions.
+  &.mm-instructions-small {
+    & > .acf-label p.description {
+      font-size: 11px;
+    }
+  }
+
   // Shorter heights for WYSIWYG fields.
-  &.mm-wysiwyg-tiny,
-  &.mm-textarea-tiny {
+  &.mm-wysiwyg-tiny {
     iframe,
     textarea {
       height: 90px !important;
@@ -145,8 +164,7 @@
     }
   }
 
-  &.mm-wysiwyg-small,
-  &.mm-textarea-small, {
+  &.mm-wysiwyg-small {
     iframe,
     textarea {
       height: 150px !important;
@@ -154,8 +172,7 @@
     }
   }
 
-  &.mm-wysiwyg-medium,
-  &.mm-textarea-medium, {
+  &.mm-wysiwyg-medium {
     iframe,
     textarea {
       height: 300px !important;
