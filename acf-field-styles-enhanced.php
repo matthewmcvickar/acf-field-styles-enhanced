@@ -4,7 +4,7 @@
  * Plugin Name:       ACF Field Styles Enhanced
  * Plugin URI:        https://github.com/matthewmcvickar/acf-field-styles-enhanced
  * Description:       A handful of styling improvements and CSS classes for ACF field groups to make for prettier editing.
- * Version:           0.0.5
+ * Version:           0.0.6
  * Author:            Matthew McVickar
  * Author URI:        http://matthewmcvickar.com
  * License:           GPL-2.0+

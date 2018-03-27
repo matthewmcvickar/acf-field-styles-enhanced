@@ -279,6 +279,24 @@
   }
 }
 
+// Hide the repeater field label but not any of its children field labels.
+.acf-field.mm-hide-repeater-label {
+  // Remove false background and dividing line.
+  &:before {
+    display: none !important;
+  }
+
+  // Hide label.
+  & > .acf-label {
+    display: none;
+  }
+
+  // Make field now take up entire container.
+  & > .acf-input {
+    width: 100% !important;
+  }
+}
+
 // Reduce right margin on horizontal list items.
 ul.acf-radio-list.acf-hl {
   li {
