@@ -1,3 +1,9 @@
+// Fix height of prepended labels.
+.acf-input-prepend,
+.acf-input-append {
+  height: auto;
+}
+
 // Make textareas block elements so they don't have extra spacing underneath.
 .acf-input textarea {
   display: block;
@@ -269,8 +275,12 @@
   }
 
   // Hide label.
-  label {
-    display: none;
+  & > .acf-label {
+    margin-bottom: 0;
+
+    & label {
+      display: none;
+    }
   }
 
   // Make field now take up entire container.
@@ -295,6 +305,11 @@
   & > .acf-input {
     width: 100% !important;
   }
+}
+
+// Add top padding if first field is conditionally hidden.
+.acf-field.acf-hidden:first-child + .acf-field.mm-related {
+  padding-top: 12px !important;
 }
 
 // Reduce right margin on horizontal list items.
@@ -330,3 +345,14 @@ ul.acf-radio-list.acf-hl {
   }
 }
 
+// Move minus buttons to the top of the column.
+.acf-repeater .acf-row-handle .acf-icon.-minus {
+  top: 30px !important;
+}
+
+// Hide TinyMCE advanced in WYSIWYG editor.
+.acf-field.mm-hide-tinymce-advanced {
+  & .mce-menubar[role="menubar"] {
+    display: none;
+  }
+}
