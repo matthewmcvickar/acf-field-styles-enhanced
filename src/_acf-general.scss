@@ -113,7 +113,7 @@
 
   // Reduce space and line before related toggle.
   &.mm-related,
-  &.mm-related td {
+  &.mm-related > td {
     border-top: 0 !important;
     padding-top: 0 !important;
 
