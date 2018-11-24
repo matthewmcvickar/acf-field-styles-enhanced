@@ -13,7 +13,7 @@
  * GitHub Plugin URI: https://github.com/matthewmcvickar/acf-field-styles-enhanced
  */
 
-define( 'acf_field_styles_enhanced_plugin_version', '0.0.8' );
+define( 'ACF_FIELD_STYLES_ENHANCED_PLUGIN_VERSION', '0.0.8' );
 
 add_action( 'admin_enqueue_scripts', 'enqueue_acf_field_styles_enhanced__load_stylesheet', PHP_INT_MAX );
 function enqueue_acf_field_styles_enhanced__load_stylesheet() {
