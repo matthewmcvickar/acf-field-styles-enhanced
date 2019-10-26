@@ -62,7 +62,8 @@
   &.mm-center {
     .acf-input input,
     .acf-input textarea,
-    #tinymce body {
+    #tinymce body,
+    .acf-input input p {
       text-align: center;
     }
   }
@@ -355,4 +356,10 @@ ul.acf-radio-list.acf-hl {
   & .mce-menubar[role="menubar"] {
     display: none;
   }
+}
+
+// Reduce vertical padding around message fields.
+.acf-field.mm-reduce-message-padding {
+  padding-top: 0;
+  padding-bottom: 0;
 }
