@@ -63,7 +63,7 @@
     .acf-input input,
     .acf-input textarea,
     #tinymce body,
-    .acf-input input p {
+    .acf-input p {
       text-align: center;
     }
   }
@@ -360,6 +360,6 @@ ul.acf-radio-list.acf-hl {
 
 // Reduce vertical padding around message fields.
 .acf-field.mm-reduce-message-padding {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
