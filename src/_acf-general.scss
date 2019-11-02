@@ -359,10 +359,10 @@
 }
 
 // No padding for field.
-.acf-field-group.__no-group-border-or-padding .acf-fields {
+.acf-field-group.__no-group-border-or-padding > .acf-input > .acf-fields {
   border: 0;
 
-  & .acf-field {
+  & > .acf-field {
     padding: 0;
   }
 }
