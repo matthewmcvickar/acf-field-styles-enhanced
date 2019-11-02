@@ -26,40 +26,46 @@
 .acf-field {
 
   // Hidden fields.
-  &.mm-hidden {
+  &.mm-hidden,
+  &.__hidden {
     display: none;
   }
 
   // Bold inputs.
-  &.mm-bold {
+  &.mm-bold,
+  &.__bold {
     .acf-input input {
       font-weight: bold;
     }
   }
 
   // Bold inputs.
-  &.mm-italic {
+  &.mm-italic,
+  &.__italic {
     .acf-input input {
       font-style: italic;
     }
   }
 
   // Uppercase inputs.
-  &.mm-uppercase {
+  &.mm-uppercase,
+  &.__uppercase {
     .acf-input input {
       font-style: italic;
     }
   }
 
   // <code> inputs.
-  &.mm-code {
+  &.mm-code,
+  &.__code {
     .acf-input input {
       font-family: monospace;
     }
   }
 
   // Centered inputs.
-  &.mm-center {
+  &.mm-center,
+  &.__center {
     .acf-input input,
     .acf-input textarea,
     #tinymce body,
@@ -69,7 +75,8 @@
   }
 
   // Big heading.
-  &.mm-heading {
+  &.mm-heading,
+  &.__heading {
     .acf-input-wrap input {
       height: 40px;
 
@@ -79,7 +86,8 @@
   }
 
   // Smaller heading.
-  &.mm-subheading {
+  &.mm-subheading,
+  &.__subheading {
     .acf-input-wrap input {
       height: 32px;
 
@@ -89,21 +97,24 @@
   }
 
   // For fields next to the subheading field, match the height.
-  &.mm-height-match-subheading {
+  &.mm-height-match-subheading,
+  &.__height-match-subheading {
     .acf-input-wrap input {
       height: 32px;
     }
   }
 
   // Rounded border so it looks like a button.
-  &.mm-button {
+  &.mm-button,
+  &.__button {
     .acf-input-wrap input {
       border-radius: 6px;
     }
   }
 
   // Inline labels.
-  &.mm-inline-label {
+  &.mm-inline-label,
+  &.__inline-label {
     .acf-label {
       float: left;
       margin-top: 4px;
@@ -114,7 +125,9 @@
 
   // Reduce space and line before related toggle.
   &.mm-related,
-  &.mm-related > td {
+  &.mm-related > td,
+  &.__related,
+  &.__related > td {
     border-top: 0 !important;
     padding-top: 0 !important;
 
@@ -126,7 +139,8 @@
   }
 
   // Indent field shown conditionally after a checkbox toggle.
-  &.mm-after-toggle {
+  &.mm-after-toggle,
+  &.__after-toggle {
     .acf-input {
       padding-left: 20px !important;
 
@@ -137,7 +151,8 @@
   }
 
   // Show instructions in a field suffix.
-  &.mm-instructions-in-suffix {
+  &.mm-instructions-in-suffix,
+  &.__instructions-in-suffix {
     & > .acf-input-append {
       color: #aaa;
       font-size: 11px;
@@ -145,7 +160,8 @@
   }
 
   // Hide instructions.
-  &.mm-hide-instructions {
+  &.mm-hide-instructions,
+  &.__hide-instructions {
     & > .acf-label p.description,
     & > .acf-label p.description ~ p,
     & > .acf-label p.description ~ ol,
@@ -156,14 +172,16 @@
   }
 
   // Small instructions.
-  &.mm-instructions-small {
+  &.mm-instructions-small,
+  &.__instructions-small {
     & > .acf-label p.description {
       font-size: 11px;
     }
   }
 
   // Shorter heights for WYSIWYG fields.
-  &.mm-wysiwyg-tiny {
+  &.mm-wysiwyg-tiny,
+  &.__wysiwyg-tiny {
     iframe,
     textarea {
       height: 90px !important;
@@ -171,7 +189,8 @@
     }
   }
 
-  &.mm-wysiwyg-small {
+  &.mm-wysiwyg-small,
+  &.__wysiwyg-small {
     iframe,
     textarea {
       height: 150px !important;
@@ -179,7 +198,8 @@
     }
   }
 
-  &.mm-wysiwyg-medium {
+  &.mm-wysiwyg-medium,
+  &.__wysiwyg-medium {
     iframe,
     textarea {
       height: 300px !important;
@@ -188,13 +208,15 @@
   }
 
   // Taller heights for post lists in relationship fields.
-  &.mm-relationship-list-medium {
+  &.mm-relationship-list-medium,
+  &.__relationship-list-medium {
     .acf-relationship .list {
       height: 250px;
     }
   }
 
-  &.mm-relationship-list-large {
+  &.mm-relationship-list-large,
+  &.__relationship-list-small {
     .acf-relationship .list {
       height: 400px;
     }
@@ -202,14 +224,16 @@
 
   // Negative top margin on WYSIWYG fields so that the field label fits in the
   // empty space to the left of the 'Visual' and 'Text' tabs.
-  &.mm-wysiwyg-collapse-label {
+  &.mm-wysiwyg-collapse-label,
+  &.__wysiwyg-collapse-label {
     .acf-input {
       margin-top: -33px
     }
   }
 
   // No border around checklists.
-  &.mm-no-border {
+  &.mm-no-border,
+  &.__no-border {
     .acf-input {
 
       // Remove border and scrolling from list of checkboxes.
@@ -233,7 +257,8 @@
   }
 
   // Rows of checkboxes.
-  &.mm-checkbox-columns.columns-2 {
+  &.mm-checkbox-columns.columns-2,
+  &.__checkbox-columns.columns-2 {
     .acf-input {
       .acf-checkbox-list {
         columns: 2;
@@ -241,7 +266,8 @@
     }
   }
 
-  &.mm-checkbox-columns.columns-3 {
+  &.mm-checkbox-columns.columns-3,
+  &.__checkbox-columns.columns-3 {
     .acf-input {
       .acf-checkbox-list {
         columns: 3;
@@ -251,7 +277,8 @@
 }
 
 // Hidden labels.
-.acf-fields.-top .acf-field.mm-hide-label {
+.acf-fields.-top .acf-field.mm-hide-label,
+.acf-fields.-top .acf-field.__hide-label {
   // Only for the topmost label in this field.
   & > .acf-label {
 
@@ -269,7 +296,8 @@
   }
 }
 
-.acf-fields.-left .acf-field.mm-hide-label {
+.acf-fields.-left .acf-field.mm-hide-label,
+.acf-fields.-left .acf-field.__hide-label {
   // Remove false background and dividing line.
   &:before {
       display: none !important;
@@ -291,7 +319,8 @@
 }
 
 // Hide the repeater field label but not any of its children field labels.
-.acf-field.mm-hide-repeater-label {
+.acf-field.mm-hide-repeater-label,
+.acf-field.__hide-repeater-label {
   // Remove false background and dividing line.
   &:before {
     display: none !important;
@@ -309,8 +338,30 @@
 }
 
 // Add top padding if first field is conditionally hidden.
-.acf-field.acf-hidden:first-child + .acf-field.mm-related {
+.acf-field.acf-hidden:first-child + .acf-field.mm-related,
+.acf-field.acf-hidden:first-child + .acf-field.__related {
   padding-top: 12px !important;
+}
+
+// Hide TinyMCE advanced in WYSIWYG editor.
+.acf-field.mm-hide-tinymce-advanced,
+.acf-field.__hide-tinymce-advanced {
+  & .mce-menubar[role="menubar"] {
+    display: none;
+  }
+}
+
+// Reduce vertical padding around message fields.
+.acf-field.mm-reduce-message-padding,
+.acf-field.__reduce-message-padding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+// No padding for field.
+.acf-field.mm-no-padding,
+.acf-field.__no-padding {
+  padding: 0 !important;
 }
 
 // Reduce right margin on horizontal list items.
@@ -349,17 +400,4 @@ ul.acf-radio-list.acf-hl {
 // Move minus buttons to the top of the column.
 .acf-repeater .acf-row-handle .acf-icon.-minus {
   top: 30px !important;
-}
-
-// Hide TinyMCE advanced in WYSIWYG editor.
-.acf-field.mm-hide-tinymce-advanced {
-  & .mce-menubar[role="menubar"] {
-    display: none;
-  }
-}
-
-// Reduce vertical padding around message fields.
-.acf-field.mm-reduce-message-padding {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
 }
