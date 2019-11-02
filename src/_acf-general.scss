@@ -359,9 +359,12 @@
 }
 
 // No padding for field.
-.acf-field.mm-no-padding,
-.acf-field.__no-padding {
-  padding: 0 !important;
+.acf-field-group.__no-group-border-or-padding .acf-fields {
+  border: 0;
+
+  & .acf-field {
+    padding: 0;
+  }
 }
 
 // Reduce right margin on horizontal list items.
