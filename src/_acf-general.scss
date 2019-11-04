@@ -313,7 +313,7 @@
   }
 
   // Make field now take up entire container.
-  .acf-input {
+  & > .acf-input {
     width: 100% !important;
   }
 }
@@ -363,13 +363,23 @@
   padding-bottom: 0 !important;
 }
 
-// No padding for field.
+// No padding for groups or nested clones.
 .acf-field-group.__no-group-border-or-padding > .acf-input > .acf-fields {
   border: 0;
 
   & > .acf-field {
     padding: 0;
   }
+}
+
+// Add some padding between fields that aren't full-width.
+.acf-field-group.__no-group-border-or-padding > .acf-input > .acf-fields > .acf-field[data-width] {
+  padding-right: 12px;
+  border-left: 0;
+}
+
+.acf-field-group.__no-group-border-or-padding > .acf-input > .acf-fields > .acf-field[data-width]:last-child {
+  padding-right: 0;
 }
 
 // Reduce right margin on horizontal list items.
