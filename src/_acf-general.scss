@@ -343,6 +343,11 @@
   padding-top: 12px !important;
 }
 
+// Hide table header.
+.acf-field.__hide-table-header .-table thead {
+  display: none;
+}
+
 // Hide TinyMCE advanced in WYSIWYG editor.
 .acf-field.mm-hide-tinymce-advanced,
 .acf-field.__hide-tinymce-advanced {
