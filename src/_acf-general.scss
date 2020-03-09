@@ -368,7 +368,11 @@
   border: 0;
 
   & > .acf-field {
-    padding: 0;
+    padding: 12px 0;
+  }
+
+  & > .acf-field:first-child {
+    padding-top: 0;
   }
 }
 
