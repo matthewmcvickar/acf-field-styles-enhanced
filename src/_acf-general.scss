@@ -57,8 +57,10 @@
 
   // <code> inputs.
   &.mm-code,
-  &.__code {
-    .acf-input input {
+  &.__code,
+  &.__monospace {
+    .acf-input input,
+    .acf-input textarea {
       font-family: monospace;
     }
   }
