@@ -27,7 +27,8 @@
 
   // Hidden fields.
   &.mm-hidden,
-  &.__hidden {
+  &.__hidden,
+  &.__hide {
     display: none;
   }
 
@@ -278,6 +279,17 @@
   }
 }
 
+// To have a non-full-length field always clear float.
+.acf-field.__clear-float {
+  clear: left !important;
+}
+
+// To have a non-full-length field always clear float. Useful when combining
+// conditional fields with percentage-width fields.
+.acf-field[data-width].__no-left-border {
+  border-left: 0 !important;
+}
+
 // Hidden labels.
 .acf-fields.-top .acf-field.mm-hide-label,
 .acf-fields.-top .acf-field.__hide-label {
@@ -366,14 +378,16 @@
 }
 
 // No padding for groups or nested clones.
-.acf-field-group.__no-group-border-or-padding > .acf-input > .acf-fields {
-  border: 0;
+.acf-field-group.__no-group-border-or-padding > .acf-input  {
+  & > .acf-fields {
+    border: 0;
+  }
 
-  & > .acf-field {
+  & > .acf-fields > .acf-field {
     padding: 12px 0;
   }
 
-  & > .acf-field:first-child {
+  & > .acf-fields > .acf-field:first-child {
     padding-top: 0;
   }
 }
