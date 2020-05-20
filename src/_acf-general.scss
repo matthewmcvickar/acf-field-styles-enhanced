@@ -183,6 +183,15 @@
   }
 
   // Shorter heights for WYSIWYG fields.
+  &.mm-wysiwyg-one-line,
+  &.__wysiwyg-one-line {
+    iframe,
+    textarea {
+      height: 50px !important;
+      min-height: 50px !important;
+    }
+  }
+
   &.mm-wysiwyg-tiny,
   &.__wysiwyg-tiny {
     iframe,
@@ -438,4 +447,17 @@ ul.acf-radio-list.acf-hl {
 // Move minus buttons to the top of the column.
 .acf-repeater .acf-row-handle .acf-icon.-minus {
   top: 30px !important;
+}
+
+// If a group is used within a seamless box, enclose its title in a box so it
+// looks like its own contained field group.
+.acf-postbox.seamless > .acf-fields > .acf-field-group > .acf-label {
+  background: #fff;
+  border-left: 1px solid #ccd0d4;
+  border-right: 1px solid #ccd0d4;
+  border-top: 1px solid #ccd0d4;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  padding: 8px 12px 4px 12px;
 }
