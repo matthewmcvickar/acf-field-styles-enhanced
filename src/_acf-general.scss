@@ -6,7 +6,7 @@
 
 // Make textareas block elements so they don't have extra spacing underneath.
 .acf-input textarea[name^="acf"] {
-  display: block
+  margin-bottom: -6px;
 }
 
 // Bigger borders between repeater rows (except for the first row).
