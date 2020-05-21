@@ -1,3 +1,5 @@
+$border-color: #ccd0d4;
+
 // Fix height of prepended labels.
 .acf-input-prepend,
 .acf-input-append {
@@ -453,11 +455,31 @@ ul.acf-radio-list.acf-hl {
 // looks like its own contained field group.
 .acf-postbox.seamless > .acf-fields > .acf-field-group > .acf-label {
   background: #fff;
-  border-left: 1px solid #ccd0d4;
-  border-right: 1px solid #ccd0d4;
-  border-top: 1px solid #ccd0d4;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  border-top: 1px solid $border-color;
   font-size: 14px;
   font-weight: bold;
   margin: 0;
   padding: 8px 12px 4px 12px;
+}
+
+// Style a single field to look like a contained field group.
+.acf-field.__group {
+  & .acf-label {
+    background: #fff;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    border-top: 1px solid $border-color;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 12px 4px 12px;
+  }
+
+  & .acf-input {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    padding: 15px 12px;
+  }
 }
