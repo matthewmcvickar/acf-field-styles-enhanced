@@ -343,6 +343,13 @@ $border-color: #ccd0d4;
   }
 }
 
+// Hidden labels in Gutenberg.
+.acf-block-component .acf-field.__hide-label {
+  & > .acf-label {
+    display: none;
+  }
+}
+
 // Hide the repeater field label but not any of its children field labels.
 .acf-field.mm-hide-repeater-label,
 .acf-field.__hide-repeater-label {
