@@ -272,7 +272,7 @@ $border-color: #ccd0d4;
 
   // Rows of checkboxes.
   &.mm-checkbox-columns.columns-2,
-  &.__checkbox-columns.columns-2 {
+  &.__checkbox-columns.__columns-2 {
     .acf-input {
       .acf-checkbox-list {
         columns: 2;
@@ -281,12 +281,25 @@ $border-color: #ccd0d4;
   }
 
   &.mm-checkbox-columns.columns-3,
-  &.__checkbox-columns.columns-3 {
+  &.__checkbox-columns.__columns-3 {
     .acf-input {
       .acf-checkbox-list {
         columns: 3;
       }
     }
+  }
+}
+
+// Taxonomy radio buttons/checkboxes in a horizontal row.
+.acf-field.__horizontal-list .acf-checkbox-list.acf-bl > li {
+  display: inline-block;
+
+  & input {
+    margin-right: 2px;
+  }
+
+  & + li {
+    margin-left: 10px;
   }
 }
 
