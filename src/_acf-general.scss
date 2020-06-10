@@ -503,3 +503,14 @@ ul.acf-radio-list.acf-hl {
     padding: 15px 12px;
   }
 }
+
+// Hide the 'Add Row' button.
+.acf-field.__hide-add-row-button .acf-actions {
+  display: none;
+}
+
+// Hide the +/- buttons for adding/removing layouts in a flexible layout field.
+.acf-field.__hide-layout-buttons .acf-fc-layout-controls .af-icon.-plus,
+.acf-field.__hide-layout-buttons .acf-fc-layout-controls .af-icon.-minus {
+  display: none !important;
+}
