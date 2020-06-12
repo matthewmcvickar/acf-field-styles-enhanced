@@ -491,10 +491,13 @@ ul.acf-radio-list.acf-hl {
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
     border-top: 1px solid $border-color;
-    font-size: 14px;
-    font-weight: bold;
     margin: 0;
     padding: 8px 12px 4px 12px;
+
+    & label {
+      font-size: 14px;
+      font-weight: bold;
+    }
   }
 
   & > .acf-input {
