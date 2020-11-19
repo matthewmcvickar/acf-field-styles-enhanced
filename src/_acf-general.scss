@@ -26,7 +26,6 @@ $border-color: #ccd0d4;
 
 // Custom row classes.
 .acf-field {
-
   // Hidden fields.
   &.mm-hidden,
   &.__hidden,
@@ -37,7 +36,7 @@ $border-color: #ccd0d4;
   // Bold inputs.
   &.mm-bold,
   &.__bold {
-    .acf-input input {
+    & .acf-input input {
       font-weight: bold;
     }
   }
@@ -45,7 +44,7 @@ $border-color: #ccd0d4;
   // Bold inputs.
   &.mm-italic,
   &.__italic {
-    .acf-input input {
+    & .acf-input input {
       font-style: italic;
     }
   }
@@ -53,7 +52,7 @@ $border-color: #ccd0d4;
   // Uppercase inputs.
   &.mm-uppercase,
   &.__uppercase {
-    .acf-input input {
+    & .acf-input input {
       font-style: italic;
     }
   }
@@ -62,8 +61,8 @@ $border-color: #ccd0d4;
   &.mm-code,
   &.__code,
   &.__monospace {
-    .acf-input input,
-    .acf-input textarea {
+    & .acf-input input,
+    & .acf-input textarea {
       font-family: monospace;
     }
   }
@@ -71,10 +70,10 @@ $border-color: #ccd0d4;
   // Centered inputs.
   &.mm-center,
   &.__center {
-    .acf-input input,
-    .acf-input textarea,
-    #tinymce body,
-    .acf-input p {
+    & .acf-input input,
+    & .acf-input textarea,
+    & #tinymce body,
+    & .acf-input p {
       text-align: center;
     }
   }
@@ -82,29 +81,28 @@ $border-color: #ccd0d4;
   // Big heading.
   &.mm-heading,
   &.__heading {
-    .acf-input-wrap input {
-      height: 40px;
+    & .acf-input-wrap input {
 
       font-size: 26px;
       font-weight: bold;
+      height: 40px;
     }
   }
 
   // Smaller heading.
   &.mm-subheading,
   &.__subheading {
-    .acf-input-wrap input {
-      height: 32px;
-
+    & .acf-input-wrap input {
       font-size: 20px;
       font-weight: bold;
+      height: 32px;
     }
   }
 
   // For fields next to the subheading field, match the height.
   &.mm-height-match-subheading,
   &.__height-match-subheading {
-    .acf-input-wrap input {
+    & .acf-input-wrap input {
       height: 32px;
     }
   }
@@ -112,7 +110,7 @@ $border-color: #ccd0d4;
   // Rounded border so it looks like a button.
   &.mm-button,
   &.__button {
-    .acf-input-wrap input {
+    & .acf-input-wrap input {
       border-radius: 6px;
     }
   }
@@ -120,11 +118,11 @@ $border-color: #ccd0d4;
   // Inline labels.
   &.mm-inline-label,
   &.__inline-label {
-    .acf-label {
+    & .acf-label {
       float: left;
-      margin-top: 4px;
-      margin-right: 2em;
       margin-bottom: 0;
+      margin-right: 2em;
+      margin-top: 4px;
     }
   }
 
@@ -136,20 +134,20 @@ $border-color: #ccd0d4;
     border-top: 0 !important;
     padding-top: 0 !important;
 
-    .acf-checkbox-list label {
+    & .acf-checkbox-list label {
+      color: #666;
       display: block;
       margin-top: -5px;
-      color: #666;
     }
   }
 
   // Indent field shown conditionally after a checkbox toggle.
   &.mm-after-toggle,
   &.__after-toggle {
-    .acf-input {
+    & .acf-input {
       padding-left: 20px !important;
 
-      .acf-input-wrap {
+      & .acf-input-wrap {
         margin-top: -8px;
       }
     }
@@ -187,8 +185,8 @@ $border-color: #ccd0d4;
   // Shorter heights for WYSIWYG fields.
   &.mm-wysiwyg-one-line,
   &.__wysiwyg-one-line {
-    iframe,
-    textarea {
+    & iframe,
+    & textarea {
       height: 50px !important;
       min-height: 50px !important;
     }
@@ -196,8 +194,8 @@ $border-color: #ccd0d4;
 
   &.mm-wysiwyg-tiny,
   &.__wysiwyg-tiny {
-    iframe,
-    textarea {
+    & iframe,
+    & textarea {
       height: 90px !important;
       min-height: 90px !important;
     }
@@ -205,8 +203,8 @@ $border-color: #ccd0d4;
 
   &.mm-wysiwyg-small,
   &.__wysiwyg-small {
-    iframe,
-    textarea {
+    & iframe,
+    & textarea {
       height: 150px !important;
       min-height: 150px !important;
     }
@@ -214,8 +212,8 @@ $border-color: #ccd0d4;
 
   &.mm-wysiwyg-medium,
   &.__wysiwyg-medium {
-    iframe,
-    textarea {
+    & iframe,
+    & textarea {
       height: 300px !important;
       min-height: 300px !important;
     }
@@ -224,14 +222,14 @@ $border-color: #ccd0d4;
   // Taller heights for post lists in relationship fields.
   &.mm-relationship-list-medium,
   &.__relationship-list-medium {
-    .acf-relationship .list {
+    & .acf-relationship .list {
       height: 250px;
     }
   }
 
   &.mm-relationship-list-large,
   &.__relationship-list-small {
-    .acf-relationship .list {
+    & .acf-relationship .list {
       height: 400px;
     }
   }
@@ -240,30 +238,29 @@ $border-color: #ccd0d4;
   // empty space to the left of the 'Visual' and 'Text' tabs.
   &.mm-wysiwyg-collapse-label,
   &.__wysiwyg-collapse-label {
-    .acf-input {
-      margin-top: -33px
+    & .acf-input {
+      margin-top: -33px;
     }
   }
 
   // No border around checklists.
   &.mm-no-border,
   &.__no-border {
-    .acf-input {
-
+    & .acf-input {
       // Remove border and scrolling from list of checkboxes.
-      .categorychecklist-holder {
+      & .categorychecklist-holder {
         border: 0;
         max-height: inherit;
       }
 
       // Align list of checkboxes with edge of field.
-      .acf-checkbox-list {
+      & .acf-checkbox-list {
         margin-top: -4px;
         padding: 0;
       }
 
       // Move (+) button in line with the checkboxes.
-      .acf-icon {
+      & .acf-icon {
         right: 0;
         top: 0;
       }
@@ -273,8 +270,8 @@ $border-color: #ccd0d4;
   // Rows of checkboxes.
   &.mm-checkbox-columns.columns-2,
   &.__checkbox-columns.__columns-2 {
-    .acf-input {
-      .acf-checkbox-list {
+    & .acf-input {
+      & .acf-checkbox-list {
         columns: 2;
       }
     }
@@ -282,8 +279,8 @@ $border-color: #ccd0d4;
 
   &.mm-checkbox-columns.columns-3,
   &.__checkbox-columns.__columns-3 {
-    .acf-input {
-      .acf-checkbox-list {
+    & .acf-input {
+      & .acf-checkbox-list {
         columns: 3;
       }
     }
@@ -323,12 +320,15 @@ $border-color: #ccd0d4;
     margin-bottom: 0;
 
     // Hide label.
-    label {
+    & label {
       display: none;
     }
 
-    // Still show field description/instructions.
-    p.description {
+    & p.description {
+      // Provide space between description/instructions and field below it.
+      margin-bottom: 12px;
+
+      // Still show field description/instructions.
       margin-top: 0 !important;
     }
   }
@@ -338,7 +338,7 @@ $border-color: #ccd0d4;
 .acf-fields.-left .acf-field.__hide-label {
   // Remove false background and dividing line.
   &:before {
-      display: none !important;
+    display: none !important;
   }
 
   // Hide label.
@@ -404,12 +404,12 @@ $border-color: #ccd0d4;
 // Reduce vertical padding around message fields.
 .acf-field.mm-reduce-message-padding,
 .acf-field.__reduce-message-padding {
-  padding-top: 0 !important;
   padding-bottom: 0 !important;
+  padding-top: 0 !important;
 }
 
 // No padding for groups or nested clones.
-.acf-field-group.__no-group-border-or-padding > .acf-input  {
+.acf-field-group.__no-group-border-or-padding > .acf-input {
   & > .acf-fields {
     border: 0;
   }
@@ -425,8 +425,8 @@ $border-color: #ccd0d4;
 
 // Add some padding between fields that aren't full-width.
 .acf-field-group.__no-group-border-or-padding > .acf-input > .acf-fields > .acf-field[data-width] {
-  padding-right: 12px;
   border-left: 0;
+  padding-right: 12px;
 }
 
 .acf-field-group.__no-group-border-or-padding > .acf-input > .acf-fields > .acf-field[data-width]:last-child {
@@ -435,12 +435,12 @@ $border-color: #ccd0d4;
 
 // Reduce right margin on horizontal list items.
 ul.acf-radio-list.acf-hl {
-  li {
+  & li {
     margin-right: 15px;
   }
 
   // Remove right margin on final list item in horizontal lists.
-  li:last-child {
+  & li:last-child {
     margin-right: 0;
   }
 }
@@ -453,16 +453,16 @@ ul.acf-radio-list.acf-hl {
 
 // Formatting of paragraphs and more in field descriptions.
 .acf-field .acf-label {
-  p {
+  & p {
     margin-top: 6px !important;
   }
 
-  pre {
-    margin: 8px 0 15px 0;
-    padding: 5px 10px;
+  & pre {
 
     background-color: #eee;
     border-radius: 5px;
+    margin: 8px 0 15px 0;
+    padding: 5px 10px;
   }
 }
 
