@@ -373,7 +373,11 @@ $border-color: #ccd0d4;
 // Hidden labels in Gutenberg.
 .acf-block-component .acf-field.__hide-label {
   & > .acf-label {
-    display: none;
+    margin-bottom: 0;
+
+    & label {
+      display: none;
+    }
   }
 }
 
