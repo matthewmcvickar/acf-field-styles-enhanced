@@ -41,7 +41,7 @@ $border-color: #ccd0d4;
     }
   }
 
-  // Bold inputs.
+  // Italic inputs.
   &.mm-italic,
   &.__italic {
     & .acf-input input {
@@ -53,11 +53,11 @@ $border-color: #ccd0d4;
   &.mm-uppercase,
   &.__uppercase {
     & .acf-input input {
-      font-style: italic;
+      text-transform: uppercase;
     }
   }
 
-  // <code> inputs.
+  // Monospace/preformatted/code inputs.
   &.mm-code,
   &.__code,
   &.__monospace {
@@ -243,6 +243,11 @@ $border-color: #ccd0d4;
     }
   }
 
+  // More top margin for collapsed WYSIWYG field in sidebar.
+  .block-editor .edit-post-sidebar .acf-fields > .acf-field.__wysiwyg-collapse-label {
+    margin-top: 25px;
+  }
+
   // No border around checklists.
   &.mm-no-border,
   &.__no-border {
@@ -422,6 +427,17 @@ $border-color: #ccd0d4;
     padding-top: 0;
   }
 }
+
+// No padding for groups in Gutenberg sidebar.
+.block-editor .edit-post-sidebar .acf-fields > .acf-field.__no-group-border-or-padding .acf-field {
+  margin: 0;
+}
+
+// No paddingf for groups in Gutenberg ACF blocks.
+.acf-field.__no-group-border-or-padding .acf-fields.-left > .acf-field > .acf-input {
+  padding: 0;
+}
+
 
 // Add some padding between fields that aren't full-width.
 .acf-field-group.__no-group-border-or-padding > .acf-input > .acf-fields > .acf-field[data-width] {
