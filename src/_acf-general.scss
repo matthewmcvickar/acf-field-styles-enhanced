@@ -214,8 +214,17 @@ $border-color: #ccd0d4;
   &.__wysiwyg-medium {
     & iframe,
     & textarea {
-      height: 300px !important;
-      min-height: 300px !important;
+      height: 250px !important;
+      min-height: 250px !important;
+    }
+  }
+
+  &.mm-wysiwyg-large,
+  &.__wysiwyg-large {
+    & iframe,
+    & textarea {
+      height: 350px !important;
+      min-height: 350px !important;
     }
   }
 
