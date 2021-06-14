@@ -1,0 +1,10 @@
+# Project
+.sass-cache
+.tmp
+error_log
+node_modules
+tmp
+
+# OS-generated files
+.DS_Store
+Thumbs.db
