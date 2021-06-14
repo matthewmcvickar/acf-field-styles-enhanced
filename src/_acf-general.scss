@@ -446,11 +446,15 @@ $border-color: #ccd0d4;
   margin: 0;
 }
 
-// No paddingf for groups in Gutenberg ACF blocks.
+// Remove top margin for `__related` fields in Gutenberg sidebar.
+.block-editor .edit-post-sidebar .acf-fields > .acf-field.__related {
+  margin-top: 0 !important;
+}
+
+// No padding for groups in Gutenberg ACF blocks.
 .acf-field.__no-group-border-or-padding .acf-fields.-left > .acf-field > .acf-input {
   padding: 0;
 }
-
 
 // Add some padding between fields that aren't full-width.
 .acf-field-group.__no-group-border-or-padding > .acf-input > .acf-fields > .acf-field[data-width] {
