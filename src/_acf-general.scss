@@ -27,14 +27,12 @@ $border-color: #ccd0d4;
 // Custom row classes.
 .acf-field {
   // Hidden fields.
-  &.mm-hidden,
   &.__hidden,
   &.__hide {
     display: none;
   }
 
   // Bold inputs.
-  &.mm-bold,
   &.__bold {
     & .acf-input input {
       font-weight: bold;
@@ -42,7 +40,6 @@ $border-color: #ccd0d4;
   }
 
   // Italic inputs.
-  &.mm-italic,
   &.__italic {
     & .acf-input input {
       font-style: italic;
@@ -50,7 +47,6 @@ $border-color: #ccd0d4;
   }
 
   // Uppercase inputs.
-  &.mm-uppercase,
   &.__uppercase {
     & .acf-input input {
       text-transform: uppercase;
@@ -58,7 +54,6 @@ $border-color: #ccd0d4;
   }
 
   // Monospace/preformatted/code inputs.
-  &.mm-code,
   &.__code,
   &.__monospace {
     & .acf-input input,
@@ -68,7 +63,6 @@ $border-color: #ccd0d4;
   }
 
   // Centered inputs.
-  &.mm-center,
   &.__center {
     & .acf-input input,
     & .acf-input textarea,
@@ -79,7 +73,6 @@ $border-color: #ccd0d4;
   }
 
   // Big heading.
-  &.mm-heading,
   &.__heading {
     & .acf-input-wrap input {
 
@@ -90,7 +83,6 @@ $border-color: #ccd0d4;
   }
 
   // Smaller heading.
-  &.mm-subheading,
   &.__subheading {
     & .acf-input-wrap input {
       font-size: 20px;
@@ -100,7 +92,6 @@ $border-color: #ccd0d4;
   }
 
   // For fields next to the subheading field, match the height.
-  &.mm-height-match-subheading,
   &.__height-match-subheading {
     & .acf-input-wrap input {
       height: 32px;
@@ -108,7 +99,6 @@ $border-color: #ccd0d4;
   }
 
   // Rounded border so it looks like a button.
-  &.mm-button,
   &.__button {
     & .acf-input-wrap input {
       border-radius: 6px;
@@ -116,7 +106,6 @@ $border-color: #ccd0d4;
   }
 
   // Inline labels.
-  &.mm-inline-label,
   &.__inline-label {
     & .acf-label {
       float: left;
@@ -127,8 +116,6 @@ $border-color: #ccd0d4;
   }
 
   // Reduce space and line before related toggle.
-  &.mm-related,
-  &.mm-related > td,
   &.__related,
   &.__related > td {
     border-top: 0 !important;
@@ -142,7 +129,6 @@ $border-color: #ccd0d4;
   }
 
   // Indent field shown conditionally after a checkbox toggle.
-  &.mm-after-toggle,
   &.__after-toggle {
     & .acf-input {
       padding-left: 20px !important;
@@ -154,7 +140,6 @@ $border-color: #ccd0d4;
   }
 
   // Show instructions in a field suffix.
-  &.mm-instructions-in-suffix,
   &.__instructions-in-suffix {
     & > .acf-input-append {
       color: #aaa;
@@ -163,7 +148,6 @@ $border-color: #ccd0d4;
   }
 
   // Hide instructions.
-  &.mm-hide-instructions,
   &.__hide-instructions {
     & > .acf-label p.description,
     & > .acf-label p.description ~ p,
@@ -175,7 +159,6 @@ $border-color: #ccd0d4;
   }
 
   // Small instructions.
-  &.mm-instructions-small,
   &.__instructions-small {
     & > .acf-label p.description {
       font-size: 11px;
@@ -183,7 +166,6 @@ $border-color: #ccd0d4;
   }
 
   // Shorter heights for WYSIWYG fields.
-  &.mm-wysiwyg-one-line,
   &.__wysiwyg-one-line {
     & iframe,
     & textarea {
@@ -192,7 +174,6 @@ $border-color: #ccd0d4;
     }
   }
 
-  &.mm-wysiwyg-tiny,
   &.__wysiwyg-tiny {
     & iframe,
     & textarea {
@@ -201,7 +182,6 @@ $border-color: #ccd0d4;
     }
   }
 
-  &.mm-wysiwyg-small,
   &.__wysiwyg-small {
     & iframe,
     & textarea {
@@ -210,7 +190,6 @@ $border-color: #ccd0d4;
     }
   }
 
-  &.mm-wysiwyg-medium,
   &.__wysiwyg-medium {
     & iframe,
     & textarea {
@@ -219,7 +198,6 @@ $border-color: #ccd0d4;
     }
   }
 
-  &.mm-wysiwyg-large,
   &.__wysiwyg-large {
     & iframe,
     & textarea {
@@ -229,14 +207,12 @@ $border-color: #ccd0d4;
   }
 
   // Taller heights for post lists in relationship fields.
-  &.mm-relationship-list-medium,
   &.__relationship-list-medium {
     & .acf-relationship .list {
       height: 250px;
     }
   }
 
-  &.mm-relationship-list-large,
   &.__relationship-list-small {
     & .acf-relationship .list {
       height: 400px;
@@ -245,7 +221,6 @@ $border-color: #ccd0d4;
 
   // Negative top margin on WYSIWYG fields so that the field label fits in the
   // empty space to the left of the 'Visual' and 'Text' tabs.
-  &.mm-wysiwyg-collapse-label,
   &.__wysiwyg-collapse-label {
     & .acf-input {
       margin-top: -33px;
@@ -258,7 +233,6 @@ $border-color: #ccd0d4;
   }
 
   // No border around checklists.
-  &.mm-no-border,
   &.__no-border {
     & .acf-input {
       // Remove border and scrolling from list of checkboxes.
@@ -282,7 +256,6 @@ $border-color: #ccd0d4;
   }
 
   // Rows of checkboxes.
-  &.mm-checkbox-columns.columns-2,
   &.__checkbox-columns.__columns-2 {
     & .acf-input {
       & .acf-checkbox-list {
@@ -291,7 +264,6 @@ $border-color: #ccd0d4;
     }
   }
 
-  &.mm-checkbox-columns.columns-3,
   &.__checkbox-columns.__columns-3 {
     & .acf-input {
       & .acf-checkbox-list {
@@ -326,7 +298,6 @@ $border-color: #ccd0d4;
 }
 
 // Hidden labels.
-.acf-fields.-top .acf-field.mm-hide-label,
 .acf-fields.-top .acf-field.__hide-label {
   // Only for the topmost label in this field.
   & > .acf-label {
@@ -348,7 +319,6 @@ $border-color: #ccd0d4;
   }
 }
 
-.acf-fields.-left .acf-field.mm-hide-label,
 .acf-fields.-left .acf-field.__hide-label {
   // Remove false background and dividing line.
   &:before {
@@ -382,7 +352,6 @@ $border-color: #ccd0d4;
 }
 
 // Hide the repeater field label but not any of its children field labels.
-.acf-field.mm-hide-repeater-label,
 .acf-field.__hide-repeater-label {
   // Remove false background and dividing line.
   &:before {
@@ -401,7 +370,6 @@ $border-color: #ccd0d4;
 }
 
 // Add top padding if first field is conditionally hidden.
-.acf-field.acf-hidden:first-child + .acf-field.mm-related,
 .acf-field.acf-hidden:first-child + .acf-field.__related {
   padding-top: 12px !important;
 }
@@ -412,7 +380,6 @@ $border-color: #ccd0d4;
 }
 
 // Hide TinyMCE advanced in WYSIWYG editor.
-.acf-field.mm-hide-tinymce-advanced,
 .acf-field.__hide-tinymce-advanced {
   & .mce-menubar[role="menubar"] {
     display: none;
@@ -420,7 +387,6 @@ $border-color: #ccd0d4;
 }
 
 // Reduce vertical padding around message fields.
-.acf-field.mm-reduce-message-padding,
 .acf-field.__reduce-message-padding {
   padding-bottom: 0 !important;
   padding-top: 0 !important;
