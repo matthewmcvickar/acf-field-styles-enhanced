@@ -407,6 +407,13 @@ $border-color: #ccd0d4;
   }
 }
 
+// Fix styling of group headings in Gutenberg sidebar.
+.block-editor .edit-post-sidebar .acf-postbox h2.hndle {
+  padding: 0 16px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+
 // No padding for groups in Gutenberg sidebar.
 .block-editor .edit-post-sidebar .acf-fields > .acf-field.__no-group-border-or-padding .acf-field {
   margin: 0;
@@ -415,6 +422,17 @@ $border-color: #ccd0d4;
 // Remove top margin for `__related` fields in Gutenberg sidebar.
 .block-editor .edit-post-sidebar .acf-fields > .acf-field.__related {
   margin-top: 0 !important;
+}
+
+// Remove borders around lists in Gutenberg sidebar.
+.block-editor .edit-post-sidebar .acf-fields > .acf-field.__no-list-border {
+  & .categorychecklist-holder {
+    border: 0;
+  }
+
+  & .acf-checkbox-list {
+    padding: 3px 0;
+  }
 }
 
 // No padding for groups in Gutenberg ACF blocks.
