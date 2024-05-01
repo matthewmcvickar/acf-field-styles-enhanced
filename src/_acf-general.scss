@@ -242,6 +242,7 @@ $border-color: #ccd0d4;
       }
 
       // Align list of checkboxes with edge of field.
+      & .acf-radio-list,
       & .acf-checkbox-list {
         margin-top: -4px;
         padding: 0;
@@ -274,6 +275,7 @@ $border-color: #ccd0d4;
 }
 
 // Taxonomy radio buttons/checkboxes in a horizontal row.
+.acf-field.__horizontal-list .acf-radio-list.acf-bl > li,
 .acf-field.__horizontal-list .acf-checkbox-list.acf-bl > li {
   display: inline-block;
 
