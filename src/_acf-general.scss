@@ -323,7 +323,7 @@ $border-color: #ccd0d4;
 
 .acf-fields.-left .acf-field.__hide-label {
   // Remove false background and dividing line.
-  &:before {
+  &::before {
     display: none !important;
   }
 
@@ -356,7 +356,7 @@ $border-color: #ccd0d4;
 // Hide the repeater field label but not any of its children field labels.
 .acf-field.__hide-repeater-label {
   // Remove false background and dividing line.
-  &:before {
+  &::before {
     display: none !important;
   }
 
@@ -477,7 +477,6 @@ ul.acf-radio-list.acf-hl {
   }
 
   & pre {
-
     background-color: #eee;
     border-radius: 5px;
     margin: 8px 0 15px 0;
