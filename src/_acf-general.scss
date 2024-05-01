@@ -303,7 +303,6 @@ $border-color: #ccd0d4;
 .acf-fields.-top .acf-field.__hide-label {
   // Only for the topmost label in this field.
   & > .acf-label {
-
     margin-bottom: 0;
 
     // Hide label.
@@ -339,6 +338,20 @@ $border-color: #ccd0d4;
   // Make field now take up entire container.
   & > .acf-input {
     width: 100% !important;
+  }
+}
+
+// If this is just a message meant to conditionally show up under a related
+// field, and if field titles are on the left, then indent it and add the
+// false background back in.
+.acf-fields.-left .acf-field.acf-field-message.__related.__hide-label {
+  &::before {
+    display: block !important;
+  }
+
+  & > .acf-input {
+    float: right !important;
+    width: 80% !important;
   }
 }
 

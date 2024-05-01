@@ -7,7 +7,7 @@
       "uuidString" : "7F32CD7B-C6EC-480C-B484-62B9220DFC10"
     }
   ],
-  "creatorBuild" : "34564",
+  "creatorBuild" : "34576",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -33,9 +33,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/acf-field-styles-enhanced.php",
-      "oF" : 1
+      "oF" : 0
     },
     "\/LICENSE" : {
       "cB" : 0,
