@@ -19,5 +19,3 @@ add_action( 'admin_enqueue_scripts', 'enqueue_acf_field_styles_enhanced__load_st
 function enqueue_acf_field_styles_enhanced__load_stylesheet() {
   wp_enqueue_style( 'acf-field-styles-enhanced', plugin_dir_url( __FILE__ ) . 'acf-field-styles-enhanced.css', array(), ACF_FIELD_STYLES_ENHANCED_PLUGIN_VERSION );
 }
-
-?>
