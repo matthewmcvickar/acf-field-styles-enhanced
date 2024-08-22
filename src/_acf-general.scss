@@ -213,9 +213,15 @@ $border-color: #ccd0d4;
     }
   }
 
-  &.__relationship-list-small {
+  &.__relationship-list-large {
     & .acf-relationship .list {
       height: 400px;
+    }
+  }
+
+  &.__relationship-list-xl {
+    & .acf-relationship .list {
+      height: 550px;
     }
   }
 
