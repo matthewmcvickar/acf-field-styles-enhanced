@@ -139,6 +139,12 @@ $border-color: #ccd0d4;
     }
   }
 
+  // Lists in instructions.
+  & .acf-label ul li {
+    margin-left: 1rem;
+    list-style: square;
+  }
+
   // Show instructions in a field suffix.
   &.__instructions-in-suffix {
     & > .acf-input-append {
