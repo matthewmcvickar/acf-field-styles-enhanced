@@ -317,7 +317,8 @@ $border-color: #ccd0d4;
 }
 
 // Hidden labels.
-.acf-fields.-top .acf-field.__hide-label {
+.acf-fields.-top .acf-field.__hide-label,
+.acf-menu-item-fields .acf-field {
   // Only for the topmost label in this field.
   & > .acf-label {
     margin-bottom: 0;
