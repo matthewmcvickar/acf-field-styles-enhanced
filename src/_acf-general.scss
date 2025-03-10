@@ -237,6 +237,11 @@ $border-color: #ccd0d4;
     & .acf-input {
       margin-top: -33px;
     }
+
+    // Add margin to field instructions so they don't get overlapped by tabs.
+    & .acf-label .description {
+      margin-right: 130px;
+    }
   }
 
   // More top margin for collapsed WYSIWYG field in sidebar.
