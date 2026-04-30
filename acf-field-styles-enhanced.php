@@ -15,7 +15,22 @@
 
 define( 'ACF_FIELD_STYLES_ENHANCED_PLUGIN_VERSION', '0.0.42' );
 
-add_action( 'admin_enqueue_scripts', 'enqueue_acf_field_styles_enhanced__load_stylesheet', PHP_INT_MAX );
-function enqueue_acf_field_styles_enhanced__load_stylesheet() {
-  wp_enqueue_style( 'acf-field-styles-enhanced', plugin_dir_url( __FILE__ ) . 'acf-field-styles-enhanced.css', array(), ACF_FIELD_STYLES_ENHANCED_PLUGIN_VERSION );
-}
+// Enqueue our stylesheet.
+add_action(
+  'admin_enqueue_scripts',
+  function() {
+    wp_enqueue_style(
+    'acf-field-styles-enhanced',
+    plugin_dir_url( __FILE__ ) . 'acf-field-styles-enhanced.css',
+    array(
+      'acf-global',
+      'acf-field-group',
+      'acf-input',
+      'acf-pro-field-group',
+      'acf-pro-input'
+    ),
+    ACF_FIELD_STYLES_ENHANCED_PLUGIN_VERSION
+  );
+  },
+  PHP_INT_MAX
+);
