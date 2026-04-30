@@ -566,3 +566,14 @@ ul.acf-radio-list.acf-hl {
 .acf-field.__hide-layout-buttons .acf-fc-layout-controls .af-icon.-minus {
   display: none !important;
 }
+
+// Make 'Add Row' and other action buttons left-aligned.
+.acf-repeater > .acf-actions .acf-button {
+  float: none;
+}
+
+// If the repeater is a table, align the button with the field in the second
+// column instead of the counter column.
+.acf-repeater.-table > .acf-actions .acf-button {
+  margin-left: 42px;
+}
