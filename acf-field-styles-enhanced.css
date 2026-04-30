@@ -409,7 +409,8 @@
 
   /* Make field now take up entire container. */
   & > .acf-input {
-    width: 100% !important;
+    width: 100%;
+    padding-left: 0;
   }
 }
 
@@ -622,15 +623,22 @@ ul.acf-radio-list.acf-hl {
 }
 
 /* Make 'Add Row' and other action buttons left-aligned. */
+.acf-actions {
+  text-align: left;
+}
+
 .acf-repeater > .acf-actions .acf-button {
   float: none;
 }
 
-/* If the repeater is a table, align the button with the field in the second
-column instead of the counter column. */
-.acf-repeater.-table > .acf-actions .acf-button {
-  margin-left: 42px;
+/* For Repeater fields, align the button with the field in the second column
+instead of the counter column. */
+.acf-repeater.-row > .acf-actions .acf-button,
+.acf-repeater.-block > .acf-actions .acf-button {
+  margin-left: 46px;
 }
 
+.acf-repeater.-table > .acf-actions .acf-button {
+  margin-left: 42px;
 }
 
