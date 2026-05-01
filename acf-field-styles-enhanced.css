@@ -414,6 +414,11 @@
   }
 }
 
+/* Fix height of prepend when there's a hidden label */
+.acf-field.__hide-label .acf-input .acf-input-prepend {
+  min-height: 30px;
+}
+
 /* If this is just a message meant to conditionally show up under a related */
 /* field, and if field titles are on the left, then indent it and add the */
 /* false background back in. */
