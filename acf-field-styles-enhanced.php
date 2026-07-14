@@ -18,20 +18,20 @@ define( 'ACF_FIELD_STYLES_ENHANCED_PLUGIN_VERSION', $plugin_data['Version'] );
 
 // Enqueue our stylesheet.
 add_action(
-  'admin_enqueue_scripts',
-  function() {
-    wp_enqueue_style(
-    'acf-field-styles-enhanced',
-    plugin_dir_url( __FILE__ ) . 'acf-field-styles-enhanced.css',
-    array(
-      'acf-global',
-      'acf-field-group',
-      'acf-input',
-      'acf-pro-field-group',
-      'acf-pro-input'
-    ),
-    ACF_FIELD_STYLES_ENHANCED_PLUGIN_VERSION
-  );
-  },
-  PHP_INT_MAX
+	'admin_enqueue_scripts',
+	function() {
+		wp_enqueue_style(
+			'acf-field-styles-enhanced',
+			plugin_dir_url( __FILE__ ) . 'acf-field-styles-enhanced.css',
+			array(
+				'acf-global',
+				'acf-field-group',
+				'acf-input',
+				'acf-pro-field-group',
+				'acf-pro-input'
+			),
+			ACF_FIELD_STYLES_ENHANCED_PLUGIN_VERSION
+		);
+	},
+	PHP_INT_MAX
 );
