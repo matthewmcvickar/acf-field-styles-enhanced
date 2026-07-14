@@ -130,7 +130,7 @@
   &.__heading {
     & .acf-input-wrap input {
 
-      font-size: 26px;
+      font-size: 20px;
       font-weight: bold;
       height: 40px;
     }
@@ -139,7 +139,7 @@
   /* Smaller heading. */
   &.__subheading {
     & .acf-input-wrap input {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
       height: 32px;
     }
