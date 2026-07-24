@@ -54,12 +54,6 @@
 	FIELD GROUPS IN THE POST EDITOR:
 ----------------------------------------------------------------------------- */
 
-/* Fix height of prepended labels. */
-.acf-input-prepend,
-.acf-input-append {
-	height: auto;
-}
-
 /* Make textareas block elements so they don't have extra spacing underneath. */
 .acf-input textarea[name^="acf"] {
 	margin-bottom: -1px;
@@ -132,7 +126,6 @@
 
 			font-size: 20px;
 			font-weight: bold;
-			height: 40px;
 		}
 	}
 
@@ -141,14 +134,6 @@
 		& .acf-input-wrap input {
 			font-size: 18px;
 			font-weight: bold;
-			height: 32px;
-		}
-	}
-
-	/* For fields next to the subheading field, match the height. */
-	&.__height-match-subheading {
-		& .acf-input-wrap input {
-			height: 32px;
 		}
 	}
 
@@ -412,11 +397,6 @@
 		width: 100%;
 		padding-left: 0;
 	}
-}
-
-/* Fix height of prepend when there's a hidden label */
-.acf-field.__hide-label .acf-input .acf-input-prepend {
-	min-height: 30px;
 }
 
 /* If this is just a message meant to conditionally show up under a related */
