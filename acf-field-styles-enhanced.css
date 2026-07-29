@@ -349,8 +349,8 @@
 	clear: left !important;
 }
 
-/* To have a non-full-length field always clear float. Useful when combining */
-/* conditional fields with percentage-width fields. */
+/* To have a non-full-length field always clear float. Useful when combining
+conditional fields with percentage-width fields. */
 .acf-field[data-width].__no-left-border {
 	border-left: 0 !important;
 }
@@ -399,9 +399,9 @@
 	}
 }
 
-/* If this is just a message meant to conditionally show up under a related */
-/* field, and if field titles are on the left, then indent it and add the */
-/* false background back in. */
+/* If this is just a message meant to conditionally show up under a related
+field, and if field titles are on the left, then indent it and add the false
+background back in. */
 .acf-fields.-left .acf-field.acf-field-message.__related.__hide-label {
 	&::before {
 		display: block !important;
@@ -560,8 +560,8 @@ ul.acf-radio-list.acf-hl {
 	top: 30px !important;
 }
 
-/* If a group is used within a seamless box, enclose its title in a box so it */
-/* looks like its own contained field group. */
+/* If a group is used within a seamless box, enclose its title in a box so it
+looks like its own contained field group. */
 .acf-postbox.seamless > .acf-fields > .acf-field-group > .acf-label {
 	background: #fff;
 	border-left: 1px solid var(--border-color);
