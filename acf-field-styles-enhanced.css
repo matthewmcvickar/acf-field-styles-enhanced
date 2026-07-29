@@ -596,6 +596,20 @@ looks like its own contained field group. */
 	}
 }
 
+/* Vertically center a field. Useful when there's a short checkbox field next to
+a tall text box. */
+.acf-field.__vertically-center-content {
+	display: flex;
+	align-content: center;
+
+	.acf-label,
+	.acf-input {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
 /* Hide the 'Add Row' button. */
 .acf-field.__hide-add-row-button .acf-actions {
 	display: none;
