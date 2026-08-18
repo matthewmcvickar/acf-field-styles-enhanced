@@ -169,11 +169,12 @@
 
 	/* Indent field shown conditionally after a checkbox toggle. */
 	&.__after-toggle {
+		& .acf-label,
 		& .acf-input {
 			padding-left: 20px !important;
 
 			& .acf-input-wrap {
-				margin-top: -8px;
+				margin-top: -5px;
 			}
 		}
 	}
