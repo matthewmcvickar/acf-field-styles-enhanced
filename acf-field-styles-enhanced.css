@@ -54,6 +54,16 @@
 	FIELD GROUPS IN THE POST EDITOR:
 ----------------------------------------------------------------------------- */
 
+/* Indent descriptions that appear after checkboxes. */
+.acf-field.__indent-description .description,
+.acf-input .acf-true-false + .description {
+	margin-left: 23px;
+}
+
+.acf-field.__balance-description .description {
+	text-wrap: balance;
+}
+
 /* Make textareas block elements so they don't have extra spacing underneath. */
 .acf-input textarea[name^="acf"] {
 	margin-bottom: -1px;
@@ -171,7 +181,7 @@
 	&.__after-toggle {
 		& .acf-label,
 		& .acf-input {
-			padding-left: 20px !important;
+			padding-left: 22px !important;
 
 			& .acf-input-wrap {
 				margin-top: -5px;
